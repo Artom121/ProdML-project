@@ -1,0 +1,16 @@
+# данные соревнования, скачать со страницы контеста в data/
+data/
+
+# python и окружение
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# результаты экспериментов, они хранятся в mlflow, а не в git
+project/mlflow.db
+project/mlartifacts/
+project/submission.csv
+
+# локальные файлы
+.DS_Store

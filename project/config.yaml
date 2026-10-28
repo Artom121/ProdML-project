@@ -1,0 +1,25 @@
+# пути считаются от папки project/
+raw_dir: ../data
+processed_dir: ../data/processed
+
+seed: 42
+n_splits: 5
+
+# catboost - основная модель, logreg - бейзлайн только на tf-idf
+model: catboost
+use_text: true          # добавлять ли в catboost скоры tf-idf модели
+
+# tf-idf + логистическая регрессия
+char_ngram_max: 5
+word_ngram_max: 2
+min_df: 2
+max_features: 300000
+C: 2.0
+
+# catboost
+iterations: 1000
+learning_rate: 0.03
+depth: 5
+l2_leaf_reg: 5
+
+experiment: you-are-bot
